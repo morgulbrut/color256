@@ -2,6 +2,10 @@
 
 Simple way to spice up your terminal output.
 
+## generate helper functions 
+
+Theres a simple python script which generates a ton of format helpers 
+
 
 
 ## Credits:
