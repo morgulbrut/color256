@@ -19,24 +19,24 @@ type Format int
 
 // Colors
 const (
-	Black Color = iota
-	Red
-	Green
-	Yellow
-	Blue
-	Magenta
-	Cyan
-	White
-	HiBlack
-	HiRed
-	HiGreen
-	HiYellow
-	HiBlue
-	HiMagenta
-	HiCyan
-	HiWhite
+	ColBlack Color = iota
+	ColRed
+	ColGreen
+	ColYellow
+	ColBlue
+	ColMagenta
+	ColCyan
+	ColWhite
+	ColHiBlack
+	ColHiRed
+	ColHiGreen
+	ColHiYellow
+	ColHiBlue
+	ColHiMagenta
+	ColHiCyan
+	ColHiWhite
 
-	Orange Color = 208
+	ColOrange Color = 208
 )
 
 // Formats
@@ -45,10 +45,10 @@ const (
 	Bold
 	Faint
 	Italic
-	Underline
+	Underlined
 	BlinkSlow
 	BlinkRapid
-	ReverseVideo
+	Reversed
 	Concealed
 	CrossedOut
 )
@@ -82,13 +82,18 @@ func StringFormatBoth(fg, bg Color, str string, f Format) string {
 	return fmt.Sprintf("\x1b[48;5;%dm\x1b[38;5;%d;%dm%s\x1b[0m", bg, fg, f, str)
 }
 
-// StringRandom returns a random colored string.
-func StringRandom(str string) string {
-	return String(Color(Random(180, 231)), str)
+//Random  is a convenient helper function to print with random foreground.
+// A newline is appended to format by default.
+func Random(format string, a ...interface{}) { fmt.Println(StringRandom(format, a...)) }
+
+// StringRandom  is a convenient helper function to print with black foreground.
+// A newline is appended to format by default.
+func StringRandom(format string, a ...interface{}) string {
+	return String(Color(RandomColor(180, 231)), fmt.Sprintf(format, a...))
 }
 
-// Random color number.
-func Random(min, max int) int {
+// RandomColor returns a random  color number.
+func RandomColor(min, max int) int {
 	return rand.Intn(max-min) + min
 }
 
