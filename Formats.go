@@ -104,3 +104,58 @@ func PrintCrossedOut(format string, a ...interface{}) { fmt.Println(CrossedOut(f
 //CrossedOut is a convenient to get a crossedout string.
 func CrossedOut(format string, a ...interface{}) string { return Format(FmtCrossedOut, fmt.Sprintf(format,a...))}
 
+//---------------------------------------------------------------------
+// Fraktur
+//---------------------------------------------------------------------
+
+// PrintFraktur is a convenient helper function to print a fraktur text.
+// A newline is appended to format by default.
+func PrintFraktur(format string, a ...interface{}) { fmt.Println(Fraktur(format,a...)) }
+
+//Fraktur is a convenient to get a fraktur string.
+func Fraktur(format string, a ...interface{}) string { return Format(FmtFraktur, fmt.Sprintf(format,a...))}
+
+//---------------------------------------------------------------------
+// DoublyUnderlined
+//---------------------------------------------------------------------
+
+// PrintDoublyUnderlined is a convenient helper function to print a doublyunderlined text.
+// A newline is appended to format by default.
+func PrintDoublyUnderlined(format string, a ...interface{}) { fmt.Println(DoublyUnderlined(format,a...)) }
+
+//DoublyUnderlined is a convenient to get a doublyunderlined string.
+func DoublyUnderlined(format string, a ...interface{}) string { return Format(FmtDoublyUnderlined, fmt.Sprintf(format,a...))}
+
+//---------------------------------------------------------------------
+// Framed
+//---------------------------------------------------------------------
+
+// PrintFramed is a convenient helper function to print a framed text.
+// A newline is appended to format by default.
+func PrintFramed(format string, a ...interface{}) { fmt.Println(Framed(format,a...)) }
+
+//Framed is a convenient to get a framed string.
+func Framed(format string, a ...interface{}) string { return Format(FmtFramed, fmt.Sprintf(format,a...))}
+
+//---------------------------------------------------------------------
+// Encircled
+//---------------------------------------------------------------------
+
+// PrintEncircled is a convenient helper function to print a encircled text.
+// A newline is appended to format by default.
+func PrintEncircled(format string, a ...interface{}) { fmt.Println(Encircled(format,a...)) }
+
+//Encircled is a convenient to get a encircled string.
+func Encircled(format string, a ...interface{}) string { return Format(FmtEncircled, fmt.Sprintf(format,a...))}
+
+//---------------------------------------------------------------------
+// Overlined
+//---------------------------------------------------------------------
+
+// PrintOverlined is a convenient helper function to print a overlined text.
+// A newline is appended to format by default.
+func PrintOverlined(format string, a ...interface{}) { fmt.Println(Overlined(format,a...)) }
+
+//Overlined is a convenient to get a overlined string.
+func Overlined(format string, a ...interface{}) string { return Format(FmtOverlined, fmt.Sprintf(format,a...))}
+

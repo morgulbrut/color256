@@ -36,7 +36,8 @@ const (
 	ColHiCyan
 	ColHiWhite
 
-	ColOrange Colr = 208
+	ColOrange   Colr = 208
+	ColHiOrange Colr = 214
 )
 
 // Formats
@@ -51,6 +52,13 @@ const (
 	FmtReversed
 	FmtConcealed
 	FmtCrossedOut
+
+	FmtFraktur Formt = iota + 19
+	FmtDoublyUnderlined
+
+	FmtFramed Formt = iota + 50
+	FmtEncircled
+	FmtOverlined
 )
 
 var (

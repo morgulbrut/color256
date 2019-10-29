@@ -192,3 +192,14 @@ func PrintOrange(format string, a ...interface{}) { fmt.Println(Orange(format,a.
 // Orange is a convenient to get a orange string.
 func Orange(format string, a ...interface{}) string { return Color(ColOrange, fmt.Sprintf(format,a...))}
 
+//---------------------------------------------------------------------
+// HiOrange
+//---------------------------------------------------------------------
+
+// PrintHiOrange is a convenient helper function to print a hiorange text.
+// A newline is appended to format by default.
+func PrintHiOrange(format string, a ...interface{}) { fmt.Println(HiOrange(format,a...)) }
+
+// HiOrange is a convenient to get a hiorange string.
+func HiOrange(format string, a ...interface{}) string { return Color(ColHiOrange, fmt.Sprintf(format,a...))}
+

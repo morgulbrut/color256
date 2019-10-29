@@ -18,6 +18,7 @@ cols = [
     "HiCyan",
     "HiWhite",
     "Orange",
+    "HiOrange",
 ]
 
 formats = [
@@ -30,6 +31,14 @@ formats = [
     "Reversed",
     "Concealed",
     "CrossedOut",
+
+    "Fraktur",
+    "DoublyUnderlined",
+
+    "Framed",
+    "Encircled",
+    "Overlined",
+
 ]
 
 
