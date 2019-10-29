@@ -37,6 +37,7 @@ func TestManual(t *testing.T) {
 	fmt.Println(HiYellow(Bold(Italic("HiYellow Bold Italic"))))
 	fmt.Println(HiYellow(Reversed("HiYellow Bold Reversed")))
 
+	fmt.Println(Color(Xd70087, "DJENNEO"))
 	fmt.Println()
 
 }
