@@ -79,7 +79,7 @@ var (
 
 // Color returns a color escape string.
 func Color(c Colr, str string) string {
-	return fmt.Sprintf("\x1b[38;5;%dm%s\x1b[0m", c, str)
+	return fmt.Sprintf("\x1b[38;5;%dm%s\x1b[39m", c, str)
 }
 
 // Format returns a format escape string.
