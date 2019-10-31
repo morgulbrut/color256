@@ -40,4 +40,21 @@ func TestManual(t *testing.T) {
 	fmt.Println(Color(Xd70087, "DJENNEO"))
 	fmt.Println()
 
+	fmt.Println(Bold("Bold"))
+	fmt.Println(Faint("Faint"))
+	fmt.Println(Italic("Italic"))
+	fmt.Println(Underlined("Underlined"))
+	fmt.Println(Reversed("Reversed"))
+
+	fmt.Println(Bold(Green("Green") + " and Bold"))
+	fmt.Println(Green("Green and " + Bold("Bold") + " and Green"))
+
+	fmt.Println(Bright(Green("Green") + " and Bright"))
+	fmt.Println(Green("Green and " + Bright("Bright") + " and Green"))
+
+	fmt.Println(Faint(Green("Green") + " and Faint"))
+	fmt.Println(Green("Green and " + Faint("Faint") + " and Green"))
+
+	fmt.Println(White(Bold(BgGreen("Green") + " and Bold")))
+	fmt.Println(Black(BgGreen("Green and " + Bold("Bold") + " and Green")))
 }
