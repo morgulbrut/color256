@@ -82,6 +82,11 @@ func Color(c Colr, str string) string {
 	return fmt.Sprintf("\x1b[38;5;%dm%s\x1b[39m", c, str)
 }
 
+// BgColor returns a backgroundcolor escape string.
+func BgColor(c Colr, str string) string {
+	return fmt.Sprintf("\x1b[48;5;%dm%s\x1b[49m", c, str)
+}
+
 // Format returns a format escape string.
 func Format(f Formt, str string) string {
 	return fmt.Sprintf("\x1b[%dm%s\x1b[0m", f, str)
