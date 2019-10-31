@@ -1,3 +1,6 @@
+// Generated using genHelperGo.py
+// Thou must not edit this file manually
+
 
 package color256
 
