@@ -70,6 +70,13 @@ var (
 		(!isatty.IsTerminal(os.Stdout.Fd()) && !isatty.IsCygwinTerminal(os.Stdout.Fd()))
 )
 
+// Aliases
+var (
+	Bright   = Bold
+	Colour   = Color
+	BgColour = BgColor
+)
+
 // Color returns a color escape string.
 func Color(c Colr, str string) string {
 	return fmt.Sprintf("\x1b[38;5;%dm%s\x1b[0m", c, str)
