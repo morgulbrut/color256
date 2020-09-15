@@ -36,6 +36,8 @@ const (
 
 	ColOrange   Colr = 208
 	ColHiOrange Colr = 214
+	ColPink     Colr = 198
+	ColHiPink   Colr = 205
 )
 
 // Formats
@@ -80,7 +82,7 @@ func Color(c Colr, str string) string {
 func BgColor(c Colr, str string) string {
 	_, noColor := os.LookupEnv("NO_COLOR")
 	if !noColor {
-	return fmt.Sprintf("\x1b[48;5;%dm%s\x1b[49m", c, str)
+		return fmt.Sprintf("\x1b[48;5;%dm%s\x1b[49m", c, str)
 	} else {
 		return str
 	}

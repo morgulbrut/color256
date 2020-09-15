@@ -203,3 +203,25 @@ func PrintHiOrange(format string, a ...interface{}) { fmt.Println(HiOrange(forma
 // HiOrange is a convenient to get a hiorange string.
 func HiOrange(format string, a ...interface{}) string { return Color(ColHiOrange, fmt.Sprintf(format,a...))}
 
+//---------------------------------------------------------------------
+// Pink
+//---------------------------------------------------------------------
+
+// PrintPink is a convenient helper function to print a pink text.
+// A newline is appended to format by default.
+func PrintPink(format string, a ...interface{}) { fmt.Println(Pink(format,a...)) }
+
+// Pink is a convenient to get a pink string.
+func Pink(format string, a ...interface{}) string { return Color(ColPink, fmt.Sprintf(format,a...))}
+
+//---------------------------------------------------------------------
+// HiPink
+//---------------------------------------------------------------------
+
+// PrintHiPink is a convenient helper function to print a hipink text.
+// A newline is appended to format by default.
+func PrintHiPink(format string, a ...interface{}) { fmt.Println(HiPink(format,a...)) }
+
+// HiPink is a convenient to get a hipink string.
+func HiPink(format string, a ...interface{}) string { return Color(ColHiPink, fmt.Sprintf(format,a...))}
+

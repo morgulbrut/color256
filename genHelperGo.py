@@ -19,6 +19,8 @@ cols = [
     "HiWhite",
     "Orange",
     "HiOrange",
+    "Pink",
+    "HiPink",
 ]
 
 formats = [
@@ -31,8 +33,8 @@ formats = [
 ]
 
 
-with open("colors.go", "w") as file:
-    print("colors.go")
+with open("Colors.go", "w") as file:
+    print("Colors.go")
     file.write("// Generated using genHelperGo.py\n")
     file.write("// Thou must not edit this file manually\n\n")
     file.write("package color256\n\n")
@@ -52,8 +54,8 @@ with open("colors.go", "w") as file:
         file.write("// " + col +" is a convenient to get a " + col.lower()+" string.\n")
         file.write("func "+col+"(format string, a ...interface{}) string { return Color(Col" +col+", fmt.Sprintf(format,a...))}\n\n")
 
-with open("bgColors.go", "w") as file:
-    print("bgColors.go")
+with open("BgColors.go", "w") as file:
+    print("BgColors.go")
     file.write("// Generated using genHelperGo.py\n")
     file.write("// Thou must not edit this file manually\n\n")
     file.write("package color256\n\n")
@@ -74,8 +76,8 @@ with open("bgColors.go", "w") as file:
         file.write("func Bg"+col+"(format string, a ...interface{}) string { return BgColor(Col" +col+", fmt.Sprintf(format,a...))}\n\n")
 
 
-with open("formats.go", "w") as file:
-    print("formats.go")
+with open("Formats.go", "w") as file:
+    print("Formats.go")
     
     file.write("// Generated using genHelperGo.py\n")
     file.write("// Thou must not edit this file manually\n\n")
