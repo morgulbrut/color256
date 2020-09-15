@@ -163,17 +163,12 @@ func TestOrange(t *testing.T) {
 }
 
 func TestHiOrange(t *testing.T) {
-	fmt.Println(HiOrange("HiOrange and " + Bold("Bold") + " and HiOrange"))
-	fmt.Println(HiOrange("HiOrange and " + Bright("Bright") + " and HiOrange"))
-	fmt.Println(HiOrange("HiOrange and " + Faint("Faint") + " and HiOrange"))
-	fmt.Println(HiOrange("HiOrange and " + Italic("Italic") + " and HiOrange"))
-	fmt.Println(HiOrange("HiOrange and " + Underlined("Underlined") + " and HiOrange"))
-	fmt.Println(HiOrange("HiOrange and " + Reversed("Reversed") + " and HiOrange"))
+// Prints out if the enviroment variable NO_COLOR is set
+func TestNO_COLOR(t *testing.T){
 	_, noColor := os.LookupEnv("NO_COLOR")
 	if noColor {
 		fmt.Println("No color")
 	} else {
 		fmt.Println("color")
-
 	}
 }

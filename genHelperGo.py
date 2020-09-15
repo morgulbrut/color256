@@ -123,6 +123,7 @@ package color256
 import (
 	"fmt"
 	"testing"
+    "os"
 )
 '''   
     file.write("// Generated using genHelperGo.py\n")
@@ -134,3 +135,13 @@ import (
         for f in formats:
             file.write("fmt.Println("+col+"(\""+col+" and \"+"+f +"(\""+f+"\")  + \" and "+col+"\"))\n")
         file.write("}\n\n")
+    
+    file.write('''// Prints out if the enviroment variable NO_COLOR is set
+func TestNO_COLOR(t *testing.T){
+    _, noColor := os.LookupEnv("NO_COLOR")
+	if noColor {
+		fmt.Println("No color")
+	} else {
+		fmt.Println("color")
+	}
+}''')
