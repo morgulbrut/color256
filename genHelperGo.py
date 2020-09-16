@@ -70,7 +70,7 @@ with open("BgColors.go", "w") as file:
 
         file.write("// PrintBg" + col + " is a convenient helper function to print a " + col.lower()+" text.\n")
         file.write("// A newline is appended to format by default.\n")
-        file.write("func PrintBg"+col+"(format string, a ...interface{}) { fmt.Println("+col+"(format,a...)) }\n\n")
+        file.write("func PrintBg"+col+"(format string, a ...interface{}) { fmt.Println(Bg"+col+"(format,a...)) }\n\n")
 
         file.write("// Bg" + col +" is a convenient to get a " + col.lower()+" string.\n")
         file.write("func Bg"+col+"(format string, a ...interface{}) string { return BgColor(Col" +col+", fmt.Sprintf(format,a...))}\n\n")
