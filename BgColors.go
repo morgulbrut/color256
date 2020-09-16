@@ -11,10 +11,12 @@ import "fmt"
 
 // PrintBgBlack is a convenient helper function to print a black text.
 // A newline is appended to format by default.
-func PrintBgBlack(format string, a ...interface{}) { fmt.Println(BgBlack(format,a...)) }
+func PrintBgBlack(format string, a ...interface{}) { fmt.Println(BgBlack(format, a...)) }
 
 // BgBlack is a convenient to get a black string.
-func BgBlack(format string, a ...interface{}) string { return BgColor(ColBlack, fmt.Sprintf(format,a...))}
+func BgBlack(format string, a ...interface{}) string {
+	return BgColor(ColBlack, fmt.Sprintf(format, a...))
+}
 
 //---------------------------------------------------------------------
 // Red
@@ -22,10 +24,10 @@ func BgBlack(format string, a ...interface{}) string { return BgColor(ColBlack, 
 
 // PrintBgRed is a convenient helper function to print a red text.
 // A newline is appended to format by default.
-func PrintBgRed(format string, a ...interface{}) { fmt.Println(BgRed(format,a...)) }
+func PrintBgRed(format string, a ...interface{}) { fmt.Println(BgRed(format, a...)) }
 
 // BgRed is a convenient to get a red string.
-func BgRed(format string, a ...interface{}) string { return BgColor(ColRed, fmt.Sprintf(format,a...))}
+func BgRed(format string, a ...interface{}) string { return BgColor(ColRed, fmt.Sprintf(format, a...)) }
 
 //---------------------------------------------------------------------
 // Green
@@ -33,10 +35,12 @@ func BgRed(format string, a ...interface{}) string { return BgColor(ColRed, fmt.
 
 // PrintBgGreen is a convenient helper function to print a green text.
 // A newline is appended to format by default.
-func PrintBgGreen(format string, a ...interface{}) { fmt.Println(BgGreen(format,a...)) }
+func PrintBgGreen(format string, a ...interface{}) { fmt.Println(BgGreen(format, a...)) }
 
 // BgGreen is a convenient to get a green string.
-func BgGreen(format string, a ...interface{}) string { return BgColor(ColGreen, fmt.Sprintf(format,a...))}
+func BgGreen(format string, a ...interface{}) string {
+	return BgColor(ColGreen, fmt.Sprintf(format, a...))
+}
 
 //---------------------------------------------------------------------
 // Yellow
@@ -44,10 +48,12 @@ func BgGreen(format string, a ...interface{}) string { return BgColor(ColGreen, 
 
 // PrintBgYellow is a convenient helper function to print a yellow text.
 // A newline is appended to format by default.
-func PrintBgYellow(format string, a ...interface{}) { fmt.Println(BgYellow(format,a...)) }
+func PrintBgYellow(format string, a ...interface{}) { fmt.Println(BgYellow(format, a...)) }
 
 // BgYellow is a convenient to get a yellow string.
-func BgYellow(format string, a ...interface{}) string { return BgColor(ColYellow, fmt.Sprintf(format,a...))}
+func BgYellow(format string, a ...interface{}) string {
+	return BgColor(ColYellow, fmt.Sprintf(format, a...))
+}
 
 //---------------------------------------------------------------------
 // Blue
@@ -55,10 +61,12 @@ func BgYellow(format string, a ...interface{}) string { return BgColor(ColYellow
 
 // PrintBgBlue is a convenient helper function to print a blue text.
 // A newline is appended to format by default.
-func PrintBgBlue(format string, a ...interface{}) { fmt.Println(BgBlue(format,a...)) }
+func PrintBgBlue(format string, a ...interface{}) { fmt.Println(BgBlue(format, a...)) }
 
 // BgBlue is a convenient to get a blue string.
-func BgBlue(format string, a ...interface{}) string { return BgColor(ColBlue, fmt.Sprintf(format,a...))}
+func BgBlue(format string, a ...interface{}) string {
+	return BgColor(ColBlue, fmt.Sprintf(format, a...))
+}
 
 //---------------------------------------------------------------------
 // Magenta
@@ -66,10 +74,12 @@ func BgBlue(format string, a ...interface{}) string { return BgColor(ColBlue, fm
 
 // PrintBgMagenta is a convenient helper function to print a magenta text.
 // A newline is appended to format by default.
-func PrintBgMagenta(format string, a ...interface{}) { fmt.Println(BgMagenta(format,a...)) }
+func PrintBgMagenta(format string, a ...interface{}) { fmt.Println(BgMagenta(format, a...)) }
 
 // BgMagenta is a convenient to get a magenta string.
-func BgMagenta(format string, a ...interface{}) string { return BgColor(ColMagenta, fmt.Sprintf(format,a...))}
+func BgMagenta(format string, a ...interface{}) string {
+	return BgColor(ColMagenta, fmt.Sprintf(format, a...))
+}
 
 //---------------------------------------------------------------------
 // Cyan
@@ -77,10 +87,12 @@ func BgMagenta(format string, a ...interface{}) string { return BgColor(ColMagen
 
 // PrintBgCyan is a convenient helper function to print a cyan text.
 // A newline is appended to format by default.
-func PrintBgCyan(format string, a ...interface{}) { fmt.Println(BgCyan(format,a...)) }
+func PrintBgCyan(format string, a ...interface{}) { fmt.Println(BgCyan(format, a...)) }
 
 // BgCyan is a convenient to get a cyan string.
-func BgCyan(format string, a ...interface{}) string { return BgColor(ColCyan, fmt.Sprintf(format,a...))}
+func BgCyan(format string, a ...interface{}) string {
+	return BgColor(ColCyan, fmt.Sprintf(format, a...))
+}
 
 //---------------------------------------------------------------------
 // White
@@ -88,10 +100,12 @@ func BgCyan(format string, a ...interface{}) string { return BgColor(ColCyan, fm
 
 // PrintBgWhite is a convenient helper function to print a white text.
 // A newline is appended to format by default.
-func PrintBgWhite(format string, a ...interface{}) { fmt.Println(BgWhite(format,a...)) }
+func PrintBgWhite(format string, a ...interface{}) { fmt.Println(BgWhite(format, a...)) }
 
 // BgWhite is a convenient to get a white string.
-func BgWhite(format string, a ...interface{}) string { return BgColor(ColWhite, fmt.Sprintf(format,a...))}
+func BgWhite(format string, a ...interface{}) string {
+	return BgColor(ColWhite, fmt.Sprintf(format, a...))
+}
 
 //---------------------------------------------------------------------
 // HiBlack
@@ -99,10 +113,12 @@ func BgWhite(format string, a ...interface{}) string { return BgColor(ColWhite, 
 
 // PrintBgHiBlack is a convenient helper function to print a hiblack text.
 // A newline is appended to format by default.
-func PrintBgHiBlack(format string, a ...interface{}) { fmt.Println(BgHiBlack(format,a...)) }
+func PrintBgHiBlack(format string, a ...interface{}) { fmt.Println(BgHiBlack(format, a...)) }
 
 // BgHiBlack is a convenient to get a hiblack string.
-func BgHiBlack(format string, a ...interface{}) string { return BgColor(ColHiBlack, fmt.Sprintf(format,a...))}
+func BgHiBlack(format string, a ...interface{}) string {
+	return BgColor(ColHiBlack, fmt.Sprintf(format, a...))
+}
 
 //---------------------------------------------------------------------
 // HiRed
@@ -110,10 +126,12 @@ func BgHiBlack(format string, a ...interface{}) string { return BgColor(ColHiBla
 
 // PrintBgHiRed is a convenient helper function to print a hired text.
 // A newline is appended to format by default.
-func PrintBgHiRed(format string, a ...interface{}) { fmt.Println(BgHiRed(format,a...)) }
+func PrintBgHiRed(format string, a ...interface{}) { fmt.Println(BgHiRed(format, a...)) }
 
 // BgHiRed is a convenient to get a hired string.
-func BgHiRed(format string, a ...interface{}) string { return BgColor(ColHiRed, fmt.Sprintf(format,a...))}
+func BgHiRed(format string, a ...interface{}) string {
+	return BgColor(ColHiRed, fmt.Sprintf(format, a...))
+}
 
 //---------------------------------------------------------------------
 // HiGreen
@@ -121,10 +139,12 @@ func BgHiRed(format string, a ...interface{}) string { return BgColor(ColHiRed, 
 
 // PrintBgHiGreen is a convenient helper function to print a higreen text.
 // A newline is appended to format by default.
-func PrintBgHiGreen(format string, a ...interface{}) { fmt.Println(BgHiGreen(format,a...)) }
+func PrintBgHiGreen(format string, a ...interface{}) { fmt.Println(BgHiGreen(format, a...)) }
 
 // BgHiGreen is a convenient to get a higreen string.
-func BgHiGreen(format string, a ...interface{}) string { return BgColor(ColHiGreen, fmt.Sprintf(format,a...))}
+func BgHiGreen(format string, a ...interface{}) string {
+	return BgColor(ColHiGreen, fmt.Sprintf(format, a...))
+}
 
 //---------------------------------------------------------------------
 // HiYellow
@@ -132,10 +152,12 @@ func BgHiGreen(format string, a ...interface{}) string { return BgColor(ColHiGre
 
 // PrintBgHiYellow is a convenient helper function to print a hiyellow text.
 // A newline is appended to format by default.
-func PrintBgHiYellow(format string, a ...interface{}) { fmt.Println(BgHiYellow(format,a...)) }
+func PrintBgHiYellow(format string, a ...interface{}) { fmt.Println(BgHiYellow(format, a...)) }
 
 // BgHiYellow is a convenient to get a hiyellow string.
-func BgHiYellow(format string, a ...interface{}) string { return BgColor(ColHiYellow, fmt.Sprintf(format,a...))}
+func BgHiYellow(format string, a ...interface{}) string {
+	return BgColor(ColHiYellow, fmt.Sprintf(format, a...))
+}
 
 //---------------------------------------------------------------------
 // HiBlue
@@ -143,10 +165,12 @@ func BgHiYellow(format string, a ...interface{}) string { return BgColor(ColHiYe
 
 // PrintBgHiBlue is a convenient helper function to print a hiblue text.
 // A newline is appended to format by default.
-func PrintBgHiBlue(format string, a ...interface{}) { fmt.Println(BgHiBlue(format,a...)) }
+func PrintBgHiBlue(format string, a ...interface{}) { fmt.Println(BgHiBlue(format, a...)) }
 
 // BgHiBlue is a convenient to get a hiblue string.
-func BgHiBlue(format string, a ...interface{}) string { return BgColor(ColHiBlue, fmt.Sprintf(format,a...))}
+func BgHiBlue(format string, a ...interface{}) string {
+	return BgColor(ColHiBlue, fmt.Sprintf(format, a...))
+}
 
 //---------------------------------------------------------------------
 // HiMagenta
@@ -154,10 +178,12 @@ func BgHiBlue(format string, a ...interface{}) string { return BgColor(ColHiBlue
 
 // PrintBgHiMagenta is a convenient helper function to print a himagenta text.
 // A newline is appended to format by default.
-func PrintBgHiMagenta(format string, a ...interface{}) { fmt.Println(BgHiMagenta(format,a...)) }
+func PrintBgHiMagenta(format string, a ...interface{}) { fmt.Println(BgHiMagenta(format, a...)) }
 
 // BgHiMagenta is a convenient to get a himagenta string.
-func BgHiMagenta(format string, a ...interface{}) string { return BgColor(ColHiMagenta, fmt.Sprintf(format,a...))}
+func BgHiMagenta(format string, a ...interface{}) string {
+	return BgColor(ColHiMagenta, fmt.Sprintf(format, a...))
+}
 
 //---------------------------------------------------------------------
 // HiCyan
@@ -165,10 +191,12 @@ func BgHiMagenta(format string, a ...interface{}) string { return BgColor(ColHiM
 
 // PrintBgHiCyan is a convenient helper function to print a hicyan text.
 // A newline is appended to format by default.
-func PrintBgHiCyan(format string, a ...interface{}) { fmt.Println(BgHiCyan(format,a...)) }
+func PrintBgHiCyan(format string, a ...interface{}) { fmt.Println(BgHiCyan(format, a...)) }
 
 // BgHiCyan is a convenient to get a hicyan string.
-func BgHiCyan(format string, a ...interface{}) string { return BgColor(ColHiCyan, fmt.Sprintf(format,a...))}
+func BgHiCyan(format string, a ...interface{}) string {
+	return BgColor(ColHiCyan, fmt.Sprintf(format, a...))
+}
 
 //---------------------------------------------------------------------
 // HiWhite
@@ -176,10 +204,12 @@ func BgHiCyan(format string, a ...interface{}) string { return BgColor(ColHiCyan
 
 // PrintBgHiWhite is a convenient helper function to print a hiwhite text.
 // A newline is appended to format by default.
-func PrintBgHiWhite(format string, a ...interface{}) { fmt.Println(BgHiWhite(format,a...)) }
+func PrintBgHiWhite(format string, a ...interface{}) { fmt.Println(BgHiWhite(format, a...)) }
 
 // BgHiWhite is a convenient to get a hiwhite string.
-func BgHiWhite(format string, a ...interface{}) string { return BgColor(ColHiWhite, fmt.Sprintf(format,a...))}
+func BgHiWhite(format string, a ...interface{}) string {
+	return BgColor(ColHiWhite, fmt.Sprintf(format, a...))
+}
 
 //---------------------------------------------------------------------
 // Orange
@@ -187,10 +217,12 @@ func BgHiWhite(format string, a ...interface{}) string { return BgColor(ColHiWhi
 
 // PrintBgOrange is a convenient helper function to print a orange text.
 // A newline is appended to format by default.
-func PrintBgOrange(format string, a ...interface{}) { fmt.Println(BgOrange(format,a...)) }
+func PrintBgOrange(format string, a ...interface{}) { fmt.Println(BgOrange(format, a...)) }
 
 // BgOrange is a convenient to get a orange string.
-func BgOrange(format string, a ...interface{}) string { return BgColor(ColOrange, fmt.Sprintf(format,a...))}
+func BgOrange(format string, a ...interface{}) string {
+	return BgColor(ColOrange, fmt.Sprintf(format, a...))
+}
 
 //---------------------------------------------------------------------
 // HiOrange
@@ -198,10 +230,12 @@ func BgOrange(format string, a ...interface{}) string { return BgColor(ColOrange
 
 // PrintBgHiOrange is a convenient helper function to print a hiorange text.
 // A newline is appended to format by default.
-func PrintBgHiOrange(format string, a ...interface{}) { fmt.Println(BgHiOrange(format,a...)) }
+func PrintBgHiOrange(format string, a ...interface{}) { fmt.Println(BgHiOrange(format, a...)) }
 
 // BgHiOrange is a convenient to get a hiorange string.
-func BgHiOrange(format string, a ...interface{}) string { return BgColor(ColHiOrange, fmt.Sprintf(format,a...))}
+func BgHiOrange(format string, a ...interface{}) string {
+	return BgColor(ColHiOrange, fmt.Sprintf(format, a...))
+}
 
 //---------------------------------------------------------------------
 // Pink
@@ -209,10 +243,12 @@ func BgHiOrange(format string, a ...interface{}) string { return BgColor(ColHiOr
 
 // PrintBgPink is a convenient helper function to print a pink text.
 // A newline is appended to format by default.
-func PrintBgPink(format string, a ...interface{}) { fmt.Println(BgPink(format,a...)) }
+func PrintBgPink(format string, a ...interface{}) { fmt.Println(BgPink(format, a...)) }
 
 // BgPink is a convenient to get a pink string.
-func BgPink(format string, a ...interface{}) string { return BgColor(ColPink, fmt.Sprintf(format,a...))}
+func BgPink(format string, a ...interface{}) string {
+	return BgColor(ColPink, fmt.Sprintf(format, a...))
+}
 
 //---------------------------------------------------------------------
 // HiPink
@@ -220,8 +256,9 @@ func BgPink(format string, a ...interface{}) string { return BgColor(ColPink, fm
 
 // PrintBgHiPink is a convenient helper function to print a hipink text.
 // A newline is appended to format by default.
-func PrintBgHiPink(format string, a ...interface{}) { fmt.Println(BgHiPink(format,a...)) }
+func PrintBgHiPink(format string, a ...interface{}) { fmt.Println(BgHiPink(format, a...)) }
 
 // BgHiPink is a convenient to get a hipink string.
-func BgHiPink(format string, a ...interface{}) string { return BgColor(ColHiPink, fmt.Sprintf(format,a...))}
-
+func BgHiPink(format string, a ...interface{}) string {
+	return BgColor(ColHiPink, fmt.Sprintf(format, a...))
+}

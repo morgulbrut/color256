@@ -29,27 +29,27 @@ func Underlined(format string, a ...interface{}) string {
 func Reversed(format string, a ...interface{}) string {
 	return fmt.Sprintf("\x1b[%dm%s\x1b[27m", FmtReversed, fmt.Sprintf(format, a...))
 }
+
 // PrintBold is a convenient helper function to print a bold text.
 // A newline is appended to format by default.
-func PrintBold(format string, a ...interface{}) { fmt.Println(Bold(format,a...)) }
+func PrintBold(format string, a ...interface{}) { fmt.Println(Bold(format, a...)) }
 
 // PrintBright is a convenient helper function to print a bright text.
 // A newline is appended to format by default.
-func PrintBright(format string, a ...interface{}) { fmt.Println(Bright(format,a...)) }
+func PrintBright(format string, a ...interface{}) { fmt.Println(Bright(format, a...)) }
 
 // PrintFaint is a convenient helper function to print a faint text.
 // A newline is appended to format by default.
-func PrintFaint(format string, a ...interface{}) { fmt.Println(Faint(format,a...)) }
+func PrintFaint(format string, a ...interface{}) { fmt.Println(Faint(format, a...)) }
 
 // PrintItalic is a convenient helper function to print a italic text.
 // A newline is appended to format by default.
-func PrintItalic(format string, a ...interface{}) { fmt.Println(Italic(format,a...)) }
+func PrintItalic(format string, a ...interface{}) { fmt.Println(Italic(format, a...)) }
 
 // PrintUnderlined is a convenient helper function to print a underlined text.
 // A newline is appended to format by default.
-func PrintUnderlined(format string, a ...interface{}) { fmt.Println(Underlined(format,a...)) }
+func PrintUnderlined(format string, a ...interface{}) { fmt.Println(Underlined(format, a...)) }
 
 // PrintReversed is a convenient helper function to print a reversed text.
 // A newline is appended to format by default.
-func PrintReversed(format string, a ...interface{}) { fmt.Println(Reversed(format,a...)) }
-
+func PrintReversed(format string, a ...interface{}) { fmt.Println(Reversed(format, a...)) }

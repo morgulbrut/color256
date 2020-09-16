@@ -1,5 +1,8 @@
 #!/usr/bin/python3
 
+import os
+
+
 cols = [
     "Black",
     "Red",
@@ -32,6 +35,8 @@ formats = [
     "Reversed",
 ]
 
+
+print("Writing files...")
 
 with open("Colors.go", "w") as file:
     print("Colors.go")
@@ -153,3 +158,8 @@ func TestNO_COLOR(t *testing.T){
 		fmt.Println("color")
 	}
 }''')
+
+print("=========================")
+print("formating stuff")
+
+os.system("go fmt")
