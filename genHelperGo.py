@@ -138,6 +138,12 @@ import (
             file.write("fmt.Println("+col+"(\""+col+" and \"+"+f +"(\""+f+"\")  + \" and "+col+"\"))\n")
         file.write("}\n\n")
     
+    file.write("func TestConvFuncs (t *testing.T) {\n")
+    for col in cols:
+        file.write("Print"+col+"(\""+col+"\")\n")
+        file.write("PrintBg"+col+"(\""+col+"\")\n")
+    file.write("}\n\n")
+
     file.write('''// Prints out if the enviroment variable NO_COLOR is set
 func TestNO_COLOR(t *testing.T){
     _, noColor := os.LookupEnv("NO_COLOR")
