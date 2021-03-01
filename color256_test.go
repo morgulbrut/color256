@@ -254,6 +254,7 @@ func TestColor(t *testing.T) {
 		want  string
 	}{
 		{"black", ColBlack, "HELLO", "\x1b[38;5;0mHELLO\x1b[39m"},
+		{"yellow", ColYellow, "HELLO", "\x1b[38;5;3mHELLO\x1b[39m"},
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
