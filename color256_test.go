@@ -241,3 +241,46 @@ func TestNO_COLOR(t *testing.T) {
 		fmt.Println("color")
 	}
 }
+
+func TestColor(t *testing.T) {
+	type args struct {
+		c   Colr
+		str string
+	}
+	tests := []struct {
+		name  string
+		color Colr
+		text  string
+		want  string
+	}{
+		{"black", ColBlack, "HELLO", "\x1b[38;5;0mHELLO\x1b[39m"},
+	}
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			if got := Color(tt.color, tt.text); got != tt.want {
+				t.Errorf("Color() = %v, want %v", got, tt.want)
+			}
+		})
+	}
+}
+
+func TestBgColor(t *testing.T) {
+	type args struct {
+		c   Colr
+		str string
+	}
+	tests := []struct {
+		name string
+		args args
+		want string
+	}{
+		// TODO: Add test cases.
+	}
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			if got := BgColor(tt.args.c, tt.args.str); got != tt.want {
+				t.Errorf("BgColor() = %v, want %v", got, tt.want)
+			}
+		})
+	}
+}
